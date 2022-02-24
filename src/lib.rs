@@ -15,7 +15,7 @@ pub enum AuthError {
 impl std::error::Error for AuthError {}
 impl fmt::Display for AuthError {
 	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-		write!(f, "({:?})", self)
+		write!(f, "{:?}", self)
 	}
 }
 
@@ -30,7 +30,7 @@ pub enum ApiError {
 impl std::error::Error for ApiError {}
 impl fmt::Display for ApiError {
 	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-		write!(f, "({:?})", self)
+		write!(f, "{:?}", self)
 	}
 }
 
@@ -43,7 +43,7 @@ pub enum ServerError {
 impl std::error::Error for ServerError {}
 impl fmt::Display for ServerError {
 	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-		write!(f, "({:?})", self)
+		write!(f, "{:?}", self)
 	}
 }
 
@@ -56,7 +56,7 @@ pub enum BackendError {
 impl std::error::Error for BackendError {}
 impl fmt::Display for BackendError {
 	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-		write!(f, "({:?})", self)
+		write!(f, "{:?}", self)
 	}
 }
 
