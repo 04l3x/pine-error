@@ -60,6 +60,18 @@ impl fmt::Display for BackendError {
 	}
 }
 
+#[derive(Debug)]
+pub enum GitError {
+	Other,
+}
+
+impl std::error::Error for GitError {}
+impl fmt::Display for GitError {
+	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+		write!(f, "{:?}", self)
+	}
+}
+
 #[cfg(test)]
 mod tests {
 	#[test]
